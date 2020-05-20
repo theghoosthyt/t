@@ -1,25 +1,10 @@
 {
-  "name": "mineflayer",
-  "version": "2.15.0",
-  "description": "create minecraft bots with a stable, high level API",
-  "main": "index.js",
-  "types": "index.d.ts",
-  "scripts": {
-    "test": "mocha --reporter spec --exit",
-    "pretest": "npm run lint && require-self",
-    "lint": "standard",
-    "fix": "standard --fix",
-    "prepare": "npm install require-self && require-self",
-    "prepublishOnly": "cp docs/README.md README.md"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/PrismarineJS/mineflayer.git"
+    "scripts": {
+    "start": "node index.js"
   },
   "engines": {
     "node": ">=10"
   },
-  "license": "MIT",
   "dependencies": {
     "minecraft-data": "^2.51.0",
     "minecraft-protocol": "^1.8.1",
@@ -34,13 +19,5 @@
     "protodef": "^1.6.7",
     "sprintf-js": "^1.1.1",
     "vec3": "^0.1.4"
-  },
-  "devDependencies": {
-    "@types/node": "^14.0.1",
-    "doctoc": "^1.0.0",
-    "minecraft-wrap": "^1.2.1",
-    "mocha": "^7.0.1",
-    "require-self": "^0.2.3",
-    "standard": "^14.0.1"
   }
 }
