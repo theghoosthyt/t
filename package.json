@@ -1,11 +1,12 @@
 {
-    "scripts": {
+  "scripts": {
     "start": "node index.js"
   },
   "engines": {
     "node": "^12"
   },
   "dependencies": {
-    "mineflayer": "^2.15.0"
+    "mineflayer": "^2.15.0",
+    "express": "^4.17.1"
   }
 }
