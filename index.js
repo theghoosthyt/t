@@ -20,14 +20,12 @@ setInterval(() => {
 // End of Glitch 24/7
 
 const mineflayer = require("mineflayer");
-const navigatePlugin = require('mineflayer-navigate')(mineflayer);
 const bot = mineflayer.createBot({
   host: "blazserver.aternos.me",
   port: 25565,
   username: "Bot",
   version: false
 });
-navigatePlugin(bot);
 
 bot.on("chat", function(username, message) {
   if (username === bot.username) return;
@@ -36,5 +34,8 @@ bot.on("chat", function(username, message) {
 
 bot.on("error", err => console.log(err));
 
+bot.on("move", function(bot, username) {
+  bot.setControlState('forward', true)
+});
 
 console.log(`Bot started! Name: ${bot.username}`);
