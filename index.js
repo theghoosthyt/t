@@ -29,13 +29,10 @@ const bot = mineflayer.createBot({
 
 bot.on("chat", function(username, message) {
   if (username === bot.username) return;
-  bot.chat(message);
+  bot.chat("message");
+  bot.setControlState('forward', true)
 });
 
 bot.on("error", err => console.log(err));
-
-bot.on("move", function(bot, username) {
-  bot.setControlState('forward', true)
-});
 
 console.log(`Bot started! Name: ${bot.username}`);
