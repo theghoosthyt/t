@@ -10,4 +10,4 @@ bot.on('chat', function(username, message) {
   bot.chat(message);
 });
 bot.on('error', err => console.log(err))
-console.log("hi")
+console.log(`Bot started! Name: ${bot.username}`)
