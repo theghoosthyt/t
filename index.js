@@ -28,18 +28,13 @@ const bot = mineflayer.createBot({
 });
 
 bot.on("whisper", function(username, message) {
-  if (!username === "Bot2") return;
+  //if (!username === "Bot2") return;
   bot.whisper("Bot2", "e");
       setTimeout(function() {
       bot.setControlState('forward', true)
+      setTimeout(function() { bot.setControlState('left', true)}, 1000);
       }, 1000);
-      bot.setControlState('right', true)
 });
-
-bot.on("chat", async function(username, message) {
-await bot.chat("blaž ti si nor");
-  await new Promise(resolve => setTimeout(resolve, 2000));
-})
 
 bot.on("error", err => console.log(err));
 
