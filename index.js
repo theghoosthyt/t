@@ -32,15 +32,29 @@ bot.on("chat", function(username, message) {
 
   if (message == "start") {
     bot.chat("Started!");
-    bot.setControlState("jump", true);
+    
+    while (true) {
     
     bot.setControlState("forward", true);
     
     setTimeout(function() {
         bot.setControlState("forward", false);
+            //bot.setControlState("jump", true);
     }, 500);    
     
+   setTimeout(function() {
+
+    bot.setControlState("back", true);
+    
+    setTimeout(function() {
+          //bot.setControlState("jump", false);
+        bot.setControlState("back", false);
+    }, 500); 
+     
+   }, 2000);  
+    
     return;
+  }
   }
 });
 
