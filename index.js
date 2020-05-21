@@ -33,6 +33,13 @@ bot.on("chat", function(username, message) {
   if (message == "start") {
     bot.chat("Started!");
     bot.setControlState("jump", true);
+    
+    bot.setControlState("forward", true);
+    
+    setTimeout(function() {
+        bot.setControlState("forward", false);
+    }, 500);    
+    
     return;
   }
 });
