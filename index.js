@@ -30,7 +30,9 @@ const bot = mineflayer.createBot({
 bot.on("whisper", function(username, message) {
   if (!username === "Bot2") return;
   bot.whisper("Bot2", "e");
+      setTimeout(function() {
       bot.setControlState('forward', true)
+      }, 1000);
       bot.setControlState('right', true)
 });
 
