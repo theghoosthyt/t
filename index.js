@@ -28,12 +28,16 @@ const bot = mineflayer.createBot({
 });
 
 bot.on("whisper", function(username, message) {
-  //if (!username === "Bot2") return;
+  if (!username === "Bot2") return;
   bot.whisper("Bot2", "e");
-      setTimeout(function() {
-      bot.setControlState('forward', true)
-      setTimeout(function() { bot.setControlState('left', true)}, 1000);
-      }, 1000);
+      bot.setControlState('jump', true)
+});
+
+bot.on("chat", function(username, message) {
+  //if (username === "mihabozic123") {
+    bot.whisper("Bot2", "e");
+    bot.whisper("mihabozic123", "started");
+  //}
 });
 
 bot.on("error", err => console.log(err));
