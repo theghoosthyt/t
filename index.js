@@ -36,8 +36,9 @@ bot.on("whisper", function(username, message) {
       bot.setControlState('right', true)
 });
 
-bot.on("chat", function(username, message) {
-bot.whisper("Bot2", "e")
+bot.on("chat", async function(username, message) {
+await bot.chat("blaž ti si nor");
+  await new Promise(resolve => setTimeout(resolve, 2000));
 })
 
 bot.on("error", err => console.log(err));
