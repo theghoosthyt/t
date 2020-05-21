@@ -32,10 +32,8 @@ bot.on("chat", function(username, message) {
 
   if (message == "start") {
     bot.chat("Started!");
-    
-    while (true) {
-    
-    bot.setControlState("forward", true);
+        
+      bot.setControlState("forward", true);
     
     setTimeout(function() {
         bot.setControlState("forward", false);
@@ -54,8 +52,13 @@ bot.on("chat", function(username, message) {
    }, 2000);  
     
     return;
-  }
-  }
+  };
+  
+});
+
+bot.on("move", function(username) {
+  
+  
 });
 
 bot.on("error", err => console.log(err));
