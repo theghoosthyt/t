@@ -58,6 +58,23 @@ bot.on("chat", function(username, message) {
 
 bot.on("move", function(username) {
   
+  bot.setControlState("forward", true);
+    
+    setTimeout(function() {
+        bot.setControlState("forward", false);
+            //bot.setControlState("jump", true);
+    }, 500);    
+    
+   setTimeout(function() {
+
+    bot.setControlState("back", true);
+    
+    setTimeout(function() {
+          //bot.setControlState("jump", false);
+        bot.setControlState("back", false);
+    }, 500); 
+     
+   }, 2000);  
   
 });
 
