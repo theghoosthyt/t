@@ -56,7 +56,7 @@ bot.on("chat", function(username, message) {
   
 });
 
-bot.on("move", function(username) {
+bot.on("move", function() {
   
   bot.setControlState("forward", true);
     
