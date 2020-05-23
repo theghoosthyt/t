@@ -36,9 +36,9 @@ bot.on("move", function() {
     setTimeout(function() {
         bot.setControlState("forward", false);
             //bot.setControlState("jump", true);
-    }, 500);    
+    }, 1000);    
     
-    }, 1000);
+    }, 2000);
     
    setTimeout(function() {
 
@@ -47,9 +47,9 @@ bot.on("move", function() {
     setTimeout(function() {
           //bot.setControlState("jump", false);
         bot.setControlState("back", false);
-    }, 500); 
+    },1000); 
      
-   }, 2000);  
+   }, 3000);  
   
    setTimeout(function() {
      
@@ -58,9 +58,9 @@ bot.on("move", function() {
     setTimeout(function() {
         bot.setControlState("right", false);
             //bot.setControlState("jump", true);
-    }, 500);    
+    }, 1000);    
     
-    }, 1000);
+    }, 2000);
     
    setTimeout(function() {
 
@@ -69,9 +69,9 @@ bot.on("move", function() {
     setTimeout(function() {
           //bot.setControlState("jump", false);
         bot.setControlState("left", false);
-    }, 500); 
+    }, 1000); 
      
-   }, 2000);  
+   }, 3000);  
   
 });
 
