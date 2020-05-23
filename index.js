@@ -64,7 +64,7 @@ bot.on("move", function() {
     
    setTimeout(function() {
 
-    bot.setControlState("left", true);
+   bot.setControlState("left", true);
     
     setTimeout(function() {
           //bot.setControlState("jump", false);
