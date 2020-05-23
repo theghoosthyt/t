@@ -80,6 +80,28 @@ bot.on("move", function() {
      
    }, 2000);  
   
+   setTimeout(function() {
+     
+  bot.setControlState("right", true);
+    
+    setTimeout(function() {
+        bot.setControlState("right", false);
+            //bot.setControlState("jump", true);
+    }, 500);    
+    
+    }, 1000);
+    
+   setTimeout(function() {
+
+    bot.setControlState("left", true);
+    
+    setTimeout(function() {
+          //bot.setControlState("jump", false);
+        bot.setControlState("left", false);
+    }, 500); 
+     
+   }, 2000);  
+  
 });
 
 bot.on("error", err => console.log(err));
