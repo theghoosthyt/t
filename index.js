@@ -31,7 +31,7 @@ bot.on("move", () => {
   
   bot.setControlState("jump", true);
   
-  setTimeout(function() {
+  setTimeout(() => {
      
   bot.setControlState("forward", true);
     
@@ -42,38 +42,38 @@ bot.on("move", () => {
     
     }, 2000);
     
-   setTimeout(function() {
+   setTimeout(() => {
 
     bot.setControlState("back", true);
     
-    setTimeout(function() {
+    setTimeout(() => {
           //bot.setControlState("jump", false);
         bot.setControlState("back", false);
     },1000); 
      
-   }, 3000);  
+   }, 2000);  
   
-   setTimeout(function() {
+   setTimeout(() => {
      
   bot.setControlState("right", true);
     
-    setTimeout(function() {
+    setTimeout(() => {
         bot.setControlState("right", false);
             //bot.setControlState("jump", true);
     }, 1000);    
     
     }, 2000);
     
-   setTimeout(function() {
+   setTimeout(() => {
 
    bot.setControlState("left", true);
     
-    setTimeout(function() {
+    setTimeout(() => {
           //bot.setControlState("jump", false);
         bot.setControlState("left", false);
     }, 1000); 
      
-   }, 3000);  
+   }, 2000);  
   
 });
 
