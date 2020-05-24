@@ -29,6 +29,8 @@ const bot = mineflayer.createBot({
 
 bot.on("move", function() {
   
+  bot.setControlState("jump", true);
+  
   setTimeout(function() {
      
   bot.setControlState("forward", true);
@@ -74,6 +76,10 @@ bot.on("move", function() {
    }, 3000);  
   
 });
+
+bot.on("kicked", function() {
+       
+       });
 
 bot.on("error", err => console.log(err));
 
