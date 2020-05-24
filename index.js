@@ -27,56 +27,58 @@ const bot = mineflayer.createBot({
   version: false
 });
 
-bot.on("move", () => {
+bot.on("move", function() {
   
   bot.setControlState("jump", true);
-  
+  setTimeout(() => {
+  bot.setControlState("jump", false);
+  }, 1000);
+    
   setTimeout(() => {
      
   bot.setControlState("forward", true);
     
-    setTimeout(function() {
+  setTimeout(() => {
         bot.setControlState("forward", false);
             //bot.setControlState("jump", true);
-    }, 1000);    
+    }, 500);    
     
-    }, 2000);
+    }, 1000);
     
-   setTimeout(() => {
+  setTimeout(() => {
 
     bot.setControlState("back", true);
     
-    setTimeout(() => {
+  setTimeout(() => {
           //bot.setControlState("jump", false);
         bot.setControlState("back", false);
-    },1000); 
+    }, 500); 
      
    }, 2000);  
   
-   setTimeout(() => {
+  setTimeout(() => {
      
   bot.setControlState("right", true);
     
-    setTimeout(() => {
+  setTimeout(() => {
         bot.setControlState("right", false);
             //bot.setControlState("jump", true);
-    }, 1000);    
+    }, 2000);    
     
-    }, 2000);
+    }, 500);
     
-   setTimeout(() => {
+  setTimeout(() => {
 
-   bot.setControlState("left", true);
+    bot.setControlState("left", true);
     
-    setTimeout(() => {
+  setTimeout(() => {
           //bot.setControlState("jump", false);
         bot.setControlState("left", false);
-    }, 1000); 
+    }, 2000); 
      
-   }, 2000);  
+   }, 500);  
   
 });
-
 bot.on("end", () => {
   bot();
 });
