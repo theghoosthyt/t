@@ -25,7 +25,7 @@ const mineflayer = require("mineflayer");
 const bot = mineflayer.createBot({
   host: "SnowCraft2020.aternos.me", //mc.hypixel.net for example
   port: 25565, //server port (leave it as is unless you know what you're doing!)
-  username: "BOT247", //username only for cracked/offline mode servers, email for premium
+  username: "BOT24", //username only for cracked/offline mode servers, email for premium
  // password: "your password here", //only for premium
   version: false //version of the server (false = auto detect)
 });
