@@ -1,5 +1,6 @@
 //---------------------------------------------------------------------
-// Glitch 24/7
+// Glitch 24/7  /// by Sn0W_  
+// https://www.youtube.com/channel/UC2goETdAh7nWcyne89NWyaw
 // Required to let uptime robot waving our bot.
 //---------------------------------------------------------------------
 
