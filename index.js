@@ -26,7 +26,7 @@ const mineflayer = require("mineflayer");
 const bot = mineflayer.createBot({
   host: "SERVERWASDMCI5.aternos.me", //mc.hypixel.net for example
   port: 25565, //server port (leave it as is unless you know what you're doing!)
-  username: "xdxdxd", //username only for cracked/offline mode servers, email for premium
+  username: "interrogante", //username only for cracked/offline mode servers, email for premium
   // password: "CONTRASEÑA", //only for premium
   version: false //version of the server (false = auto detect)
 });
